@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table </title>
+    <link rel="stylesheet"type="text/CSS" href="cssform.css">
+</head>
+<body>
+    <!-- VD cách tạo form đăng nhập-->
+    <!--fieldset: là thẻ viền đóng khung cho form-->
+    <!--legend: là thẻ tạo tiêu đề nằm trong khung viền của thẻ fieldset-->
+    <h3> THẺ FORM HTML</h3>
+    <form action="/action_page.php" target="_blank" method="post">
+        <fieldset>
+        <legend>Login:</legend>
+        <label for="userID">UserID:</label><br>
+        <input type="text" id="userID" name="userID" value=""><br>
+        <label for="pw">Password:</label><br>
+        <input type="password" id="pw" name="pw" value=""><br>
+        <P><input type="submit" value="Login"></P>
+        </fieldset><hr>
+    </form>
+    <!-- VD cách tạo form đăng ký user-->
+    <form action="../WEB/index.html" target="_parent" method="post">
+        <fieldset>
+        <legend>Register:</legend>
+        <label for="fullname"> Họ và tên: </label><br>
+        <input type="text" id="fullname" name="fullname" value=""><br>
+        <label for="birthday"> Năm sinh: </label><br>
+        <input type="date" id="birthday" name="birthday" value=""><br>
+        <label for="address"> Địa chỉ: </label><br>
+        <input type="text" id="address" name="address" height="400" value=""><br>
+        <label for="provin"> Tỉnh thành: </label><br>
+        <select id="provin" name="provin">
+            <option value="Hà Nội"> Hà Nội </option>
+            <option value="TP.HCM"> TP.HCM </option>
+            <option value="Đà Nẵng"> Đà Nẵng </option>
+            <option value="TV"> Trà Vinh </option>
+            <option value="TTHue"> Thừa Thiên Huế </option>
+            <option value="Cần Thơ"> Cần Thơ </option>
+        </select><br></p>
+        <label for="userID">UserID:</label><br>
+        <input type="text" id="userID" name="userID" value=""><br>
+        <label for="pw">Password:</label><br>
+        <input type="password" id="pw" name="pw" value="">
+        <p> <input type="submit" value="Đăng Ký">  <input type="reset" value="Tạo Lại"> </p>
+        <!--size="1" multiple: có thể thêm vào thẻ select-->
+        </fieldset>
+    </form>
+    <!-- Nhập tay -->
+    <input type="text"> 
+    <input type="email">
+    <input type="number"> 
+    <input type="password">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <hr>
+    <!-- Lựa chọn từ danh sách -->
+    <select>
+        <option>VN</option>
+        <option>TL</option>
+        <option>TQ</option>
+    </select>
+    <hr>
+    <!-- Tích -->
+    <input type="radio">
+    <input type="checkbox">
+    <hr>
+    <!-- Nút -->
+    <button>Save</button>
+    <input type="button" value="Save">
+    <input type="submit" value="Save">
+    <input type="reset" value="Reset">
+    <hr>
+    <!-- Đặc biệt -->
+    <input type="date"/>
+    <input type="datetime-local"/>
+    <input type="color"/>
+    <input type="range">
+    <form action="https://www.youtube.com/results?search">
+        <input type="text" name="search_query" />
+        <input type="submit" value="Tìm kiếm" />
+    </form>
+</body>
+</html>

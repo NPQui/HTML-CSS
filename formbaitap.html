@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Table </title>
+    <link rel="stylesheet"type="text/CSS" href="WEB\cssform.css">
+</head>
+<body>
+    <ul style="list-style-type: square;">
+        <li><a href="WEB/index.html" target="_parent">Trang Chủ</a></li>
+        <li><a href="formbaitap.html" target="_parent">Đăng Ký Khóa Học</a></li>
+        <li><a href="WEB/form.html" target="_parent"> Đăng Nhập/Đăng Ký</a></li> 
+        <li><a href="#thongtin">Liên Lạc</a></li>          
+    </ul>
+    <!-- VD cách tạo form đăng nhập-->
+    <!--fieldset: là thẻ viền đóng khung cho form-->
+    <!--legend: là thẻ tạo tiêu đề nằm trong khung viền của thẻ fieldset-->
+    <fieldset>
+        <h3 style="width:auto; background-color: blueviolet; text-align: center;"> FORM ĐĂNG KÝ</h3>
+    <form action="/action_page.php" target="_blank" method="post">
+        <p style="color: blue; "> Họ và tên:<input type="textbox" name="userID" value="">
+        <p style="color: blue; text-indent: 3.2%;"> Email:<input type="email" name="mail" value=""> </p>
+    <p style="color:red; text-indent: 0.5%;"> Sở Thích:
+        <input type="checkbox" name="Football" value="Bóng Đá"> Bóng Đá.&nbsp;&nbsp; 
+        <input type="checkbox" name="music" value="Âm Nhạc">Âm Nhạc.
+        <input type="checkbox" name="readbook" value="Đọc Sách">Đọc Sách.<br>
+        <p style="color: red; text-indent: 6.2%;"><input type="checkbox" name="web" value="Lướt Web"> Lướt Web. 
+        <input type="checkbox" name="film" value="Film">Điện Ảnh.
+        <input type="checkbox" name="travel" value="travel">Du Lịch.
+        </p>
+    </p>
+        <P><input type="submit" value="Gửi Thông Tin"> <input type="reset" value="Nhập Lại"></P>
+    </form>
+    </fieldset><br>
+        <!-- VD cách tạo form đăng ký user-->
+    <fieldset>
+        <h3 style="width:auto; background-color:brown; text-align: center;">ĐĂNG KÝ HỌC VIÊN</h3>    
+    <form action="WEB/index.html" target="_parent" method="post">
+        <p style="color: blue; "> Họ và Tên:&nbsp;&nbsp;<input type="text" id="fullname" name="fullname" value=""></p>
+        <p style="color: blue; "> Ngày Sinh:&nbsp;&nbsp;<input type="date" id="birthday" name="birthday" value=""></p>
+        <p style="color: blue; "> Giới Tính:&nbsp;&nbsp; <!--name: name trùng tên thì chỉ được chọn duy nhất 1 loại-->
+            <input type="radio" id="Nam" name="giotinh"> Nam <input type="radio" id="Nu" name="giotinh"> Nữ </p>
+        <p style="color: blue; "> Địa Chỉ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="address" name="address" height="500px" value=""> 
+            Tỉnh Thành:
+            <select id="provin" name="provin">
+                <option value="Hà Nội"> Hà Nội </option>
+                <option value="TP.HCM"> TP.HCM </option>
+                <option value="Đà Nẵng"> Đà Nẵng </option>
+                <option value="TV"> Trà Vinh </option>
+                <option value="TTHue"> Thừa Thiên Huế </option>
+                <option value="Cần Thơ"> Cần Thơ </option>
+            </select><br></p>
+        <p style="color: blue;"> Lớp:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="provin" name="provin">
+            <option value="select"> --Chọn lớp-- </option>
+            <option value="HTMLCSS"> HTML/CSS </option>
+            <option value="javacsript">  Lập trình Java Script </option>
+            <option value="PHP"> Lập trình PHP </option>
+            <option value="Python"> Lập trình Python </option>
+            </select>
+        <br></p>
+        <p style="color: blue;"> Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" name="email" value=""></p>
+        <p style="color: blue;"> Điện thoại:&nbsp;&nbsp;
+        <input type="number" name="phone" value=""></p>
+        <p> <input type="submit" value="Đăng Ký">  <input type="reset" value="Nhập lại"> </p>
+        <!--size="1" multiple: có thể thêm vào thẻ select-->
+    </form>
+    </fieldset>
+</body>
+</html>
