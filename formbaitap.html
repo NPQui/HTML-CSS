@@ -20,13 +20,13 @@
     <fieldset>
         <h3 style="width:auto; background-color: blueviolet; text-align: center;"> FORM ĐĂNG KÝ</h3>
     <form action="/action_page.php" target="_blank" method="post">
-        <p style="color: blue; "> Họ và tên:<input type="textbox" name="userID" value="">
+        <p style="color: blue; "> Họ và tên:<input type="textbox" name="userID" value=""> </p>
         <p style="color: blue; text-indent: 3.2%;"> Email:<input type="email" name="mail" value=""> </p>
-    <p style="color:red; text-indent: 0.5%;"> Sở Thích:
+    <p style="color:red; text-indent: 0.5%;"> <span style="color: blue">Sở Thích:</span>
         <input type="checkbox" name="Football" value="Bóng Đá"> Bóng Đá.&nbsp;&nbsp; 
         <input type="checkbox" name="music" value="Âm Nhạc">Âm Nhạc.
         <input type="checkbox" name="readbook" value="Đọc Sách">Đọc Sách.<br>
-        <p style="color: red; text-indent: 6.2%;"><input type="checkbox" name="web" value="Lướt Web"> Lướt Web. 
+        <p style="color:red; text-indent: 6.2%;"><input type="checkbox" name="web" value="Lướt Web"> Lướt Web. 
         <input type="checkbox" name="film" value="Film">Điện Ảnh.
         <input type="checkbox" name="travel" value="travel">Du Lịch.
         </p>
@@ -41,7 +41,7 @@
         <p style="color: blue; "> Họ và Tên:&nbsp;&nbsp;<input type="text" id="fullname" name="fullname" value=""></p>
         <p style="color: blue; "> Ngày Sinh:&nbsp;&nbsp;<input type="date" id="birthday" name="birthday" value=""></p>
         <p style="color: blue; "> Giới Tính:&nbsp;&nbsp; <!--name: name trùng tên thì chỉ được chọn duy nhất 1 loại-->
-            <input type="radio" id="Nam" name="giotinh"> Nam <input type="radio" id="Nu" name="giotinh"> Nữ </p>
+            <input type="radio" id="Nam" name="giotinh" value="Nam"> Nam <input type="radio" id="Nu" name="giotinh" value="Nu"> Nữ </p>
         <p style="color: blue; "> Địa Chỉ:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="address" name="address" height="500px" value=""> 
             Tỉnh Thành:
             <select id="provin" name="provin">
@@ -68,6 +68,99 @@
         <p> <input type="submit" value="Đăng Ký">  <input type="reset" value="Nhập lại"> </p>
         <!--size="1" multiple: có thể thêm vào thẻ select-->
     </form>
+    </fieldset><br>
+    <!--Bài tập làm form đơn giản-->
+    <fieldset>
+        <form action="formbaitap.html" method="get">
+            <h2>Order Form</h2>
+        <p>What would you like to buy?</p>
+        <select>
+         <option value = "  ">A</option>
+         <option>B (+  0.5$)</option>
+         <option>C (+  0.5$)</option>
+        </select>
+        <p>How many would you like to order?</p>
+        <input type="radio" name="rd"/> 1 - $10 <br/>
+        <input type="radio" name="rd"/> 2 - $20 <br/>
+        <input type="radio" name="rd"/> 3 - $25 <br/>
+        <p>Name <span style="color: red">*</span> </p>
+            <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+            <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+            <p>Email</p>
+            <input type = "text" name="email" size="35"/>
+            <p>Phone Number</p>
+            <input type = "text" name="phone1" size="5"/> -
+            <input type = "text" name="phone2" size="5"/> -
+            <input type = "text" name="phone3" size="5"/>
+        </form>
+    </fieldset><br>
+    <fieldset>
+        <h3 style="color: red;">Market Research Survey</h3>
+        <p> Please take a fews moments to complete this saticfaction survey.</p><hr>
+        <p> What is your are range ?</p>
+        <form>
+            <select>
+                <option>18 -24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+            </select>
+        <p> What is your yearly income range ?</p>
+            <select style="width: 400px;">
+                <option>$0 -$25000</option>
+                <option>$25000 - $30000</option>
+                <option>$30000 - $35000</option>
+                <option>$35000 - $40000</option>
+            </select>
+        <p>Gender:</p>
+        <input type="radio" name="Gender" value="male"> Male <br>
+        <input type="radio" name="Gender" value="Female"> Female
+        <p>Which of the following products have your purchase in the last 2 months. Please check</p>
+        <input type="checkbox" id="products" name="products" value="products1"> Products 1 <br>
+        <input type="checkbox" id="products" name="products" value="products2"> Products 2 <br>
+        <input type="checkbox" id="products" name="products" value="products3"> Products 3 <br>
+        <p>How often would you use our new products.</p>
+        <input type="radio" id="daily" name="date" value="daily"> Daily <br>
+        <input type="radio" id="weekly" name="date" value="weekly"> Weekly <br>
+        <input type="radio" id="monthly" name="date" value="monthly"> Monthly <br>
+        <p>What would you pay for the new products></p>
+        $<input type="number">-<input type="number" ; style="width: 40px;">
+        <pre> Dollars            Cents</pre>
+        <P> What features would you like to see in the new products.</P>
+        <textarea type="text" name="comments"; style="width: 900px; height: 700;" rows="5" > </textarea>
+        <p>Please rate your level of greement with of the following statements.</p>
+        <table border="1px solid black" style="border-collapse: collapse; font-size:12px;" >
+            <tr>
+                <th style="width: 300px; height:30px; background-color: aqua;"></th>
+                <th style="width: 130px; background-color: aqua;">Strongly Disagree</th>
+                <th style="width: 130px; background-color: aqua;">Disagree</th>
+                <th style="width: 130px; background-color: aqua;">Agree</th>
+                <th style="width: 130px; background-color: aqua;">Strongly Agree</th>
+            </tr>
+            <tr>
+                <td><b> Our products are piced fairly. </b></td>
+                <td><input type="radio" name="StronglyD" value="1"><pre> 1</pre></td>
+                <td><input type="radio" name="Disagree" value="2"><pre> 2</pre></td>
+                <td><input type="radio" name="Agree" value="3"><pre> 3</pre></td>
+                <td><input type="radio" name="StronglyA" value="4"><pre> 4</pre></td>
+            </tr>
+            <tr>
+                <td><b> Our products are hight quality. </b></td>
+                <td><input type="radio" name="StronglyD" value="1"><pre> 1</pre></td>
+                <td><input type="radio" name="Disagree" value="2"><pre> 2</pre></td>
+                <td><input type="radio" name="Agree" value="3"><pre> 3</pre></td>
+                <td><input type="radio" name="StronglyA" value="4"><pre> 4</pre></td>
+            </tr>
+            <tr>
+                <td><b> You would recommend our products to a friend coworker. </b></td>
+                <td><input type="radio" name="StronglyD" value="1"><pre> 1</pre></td>
+                <td><input type="radio" name="Disagree" value="2"><pre> 2</pre></td>
+                <td><input type="radio" name="Agree" value="3"><pre> 3</pre></td>
+                <td><input type="radio" name="StronglyA" value="4"><pre> 4</pre></td>
+            </tr>
+        </table><br>
+            <input type="submit" name="submit">
+        </form>
     </fieldset>
 </body>
 </html>
