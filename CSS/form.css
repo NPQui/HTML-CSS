@@ -1,0 +1,7 @@
+body {
+        background-image:url(../WEB/anhnenform.jpg);            
+     }
+.tieude { font-size: 30px; color: blue;}
+p { font-size: 22px; color: red;}
+input {width: 300px;}
+.input1 {height: 30px; width: 50px; background-color: yellow; color: rgb(255, 0, 170);}
